@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L1brary - Traktor Library Enhancer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #0f172a; /* slate-900 */
+            color: #f8fafc; /* slate-50 */
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #a855f7 0%, #3b82f6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #a855f7 0%, #3b82f6 100%);
+        }
+    </style>
+</head>
+<body class="min-h-screen font-sans">
+    <header class="container mx-auto px-6 py-8 flex justify-between items-center">
+        <div class="text-2xl font-bold tracking-tighter">🎵 L1brary</div>
+        <nav class="space-x-4 hidden md:flex">
+            <a href="#features" class="hover:text-purple-400 transition">Features</a>
+            <a href="#how-it-works" class="hover:text-purple-400 transition">How it Works</a>
+        </nav>
+        <a href="https://github.com/meekp/l1brary" class="bg-white/10 hover:bg-white/20 px-6 py-2 rounded-full transition font-medium">Get Started</a>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="container mx-auto px-6 py-20 text-center">
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight">
+                Unlock the <span class="gradient-text">Full Potential</span><br />
+                of your Traktor Collection.
+            </h1>
+            <p class="text-xl md:text-2xl text-slate-400 mb-10 max-w-3xl mx-auto">
+                L1brary automatically enriches your Traktor Pro music collection with high-fidelity metadata from MusicBrainz, Discogs, and Spotify.
+            </p>
+            <div class="flex justify-center gap-4">
+                <a href="#" class="gradient-bg text-white px-8 py-4 rounded-full font-bold text-lg hover:opacity-90 transition shadow-lg shadow-purple-500/30">Download for Windows</a>
+                <a href="#" class="bg-slate-800 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-slate-700 transition border border-slate-700">Download for macOS</a>
+            </div>
+            
+            <div class="mt-20 relative mx-auto max-w-5xl">
+                <div class="absolute inset-0 gradient-bg blur-3xl opacity-20 rounded-full"></div>
+                <img src="./public/images/01-home.png" alt="L1brary App Interface" class="relative rounded-xl shadow-2xl border border-slate-700 w-full" onerror="this.src='https://placehold.co/1200x800/1e293b/a855f7?text=L1brary+Interface'">
+            </div>
+        </section>
+
+        <!-- Features -->
+        <section id="features" class="bg-slate-800/50 py-24">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold mb-4">Powerful Metadata Enrichment</h2>
+                    <p class="text-slate-400 text-lg">Everything you need to organize your DJ library with zero manual effort.</p>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Feature 1 -->
+                    <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700 hover:border-purple-500/50 transition">
+                        <div class="w-14 h-14 gradient-bg rounded-xl flex items-center justify-center text-2xl mb-6">
+                            <i class="fa-solid fa-water"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">API Waterfall</h3>
+                        <p class="text-slate-400">Intelligent fallback system checks MusicBrainz, then Discogs, then Spotify to find the highest quality metadata for your tracks.</p>
+                    </div>
+                    
+                    <!-- Feature 2 -->
+                    <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700 hover:border-purple-500/50 transition">
+                        <div class="w-14 h-14 gradient-bg rounded-xl flex items-center justify-center text-2xl mb-6">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">100% Safe Operations</h3>
+                        <p class="text-slate-400">Creates timestamped backups of your collection before making any changes. Includes a Dry Run mode to preview edits first.</p>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700 hover:border-purple-500/50 transition">
+                        <div class="w-14 h-14 gradient-bg rounded-xl flex items-center justify-center text-2xl mb-6">
+                            <i class="fa-solid fa-robot"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Smart Auto-Detection</h3>
+                        <p class="text-slate-400">Automatically detects your Traktor Pro libraries on Windows and macOS, providing instant statistics on missing labels, genres, and release dates.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-slate-800 py-12 mt-12">
+        <div class="container mx-auto px-6 text-center text-slate-500">
+            <p>&copy; 2026 L1brary. All rights reserved.</p>
+            <p class="mt-2 text-sm">Not affiliated with Native Instruments.</p>
+        </div>
+    </footer>
+</body>
+</html>
